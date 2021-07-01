@@ -1,0 +1,52 @@
+{
+    "name": "Malayali Promoter bot",
+    "description": "A telegram force subscribe bot for promote Malyali channels.",
+    "logo": "https://telegra.ph/file/72be15d751468d1ba9acc.jpg",
+    "keywords": [
+        "ForceSub",
+        "Promoter",
+        "Telegram Bot",
+        "JE Bots"
+    ],
+    "website": "https://t.me/Animemusicarchive6",
+    "repository": "https://github.com/Achu2234/MalayaliPromoterbot",
+    "success_url": "https://t.me/Yeageristbotsdev",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        },
+        "CHANNEL_USERNAME": {
+            "description": "Your channel username that you want to Promote",
+            "value": ""
+        },
+        "WARN_MESSAGE": {
+            "description": "The warn message you want to send after muted a member",
+            "value": ""
+        },
+        "START_MESSAGE": {
+            "description": "The message you want to send on bot's pm when do /start",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
